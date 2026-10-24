@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité – Siamath</title>
+<link rel="canonical" href="https://netersoft.github.io/siamath/privacy/">
+<link rel="alternate" hreflang="fr" href="https://netersoft.github.io/siamath/privacy/">
+<link rel="alternate" hreflang="en" href="https://netersoft.github.io/siamath/privacy/en/">
+<script>
+(function () {
+  var lang = null;
+  try { lang = localStorage.getItem('lang'); } catch (e) {}
+  if (!lang) {
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+    lang = /^fr(-|$)/i.test(langs[0]) ? 'fr' : 'en';
+  }
+  if (lang === 'en') location.replace('en/' + location.search + location.hash);
+})();
+</script>
+<style>
+  :root { color-scheme: light dark; --text: #16132b; --muted: #5f5b78; --bg: #f4f3f8; --accent: #3b2f8f; --line: #dcd8ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #f2f1f8; --muted: #a9a5c4; --bg: #110e24; --accent: #afa3ff; --line: #2e2a4d; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  nav strong { color: var(--accent); font-size: 18px; }
+  a { color: var(--accent); }
+  h1 { font-size: 28px; line-height: 1.25; margin: 24px 0 4px; }
+  h2 { font-size: 20px; margin: 28px 0 8px; }
+  em { color: var(--muted); }
+  li { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><strong>Siamath</strong><a href="https://netersoft.github.io/siamath/privacy/en/" hreflang="en" onclick="try { localStorage.setItem('lang', 'en'); } catch (e) {}">English</a></nav>
+<h1>Politique de confidentialité</h1>
+<p><em>En vigueur au 24 octobre 2026.</em></p>
+
+<p>Siamath est une application gratuite pour apprendre les maths en comprenant pourquoi elles marchent, éditée par Netersoft. Elle fonctionne entièrement hors ligne : cette politique explique ce qu'elle fait de tes données, c'est-à-dire rien en dehors de ton appareil.</p>
+
+<h2>Aucune donnée collectée</h2>
+<p>Siamath ne collecte, ne transmet et ne vend aucune donnée personnelle. L'application ne demande pas l'accès à Internet, n'a pas de compte utilisateur, ne contient aucune intelligence artificielle, aucun outil de statistiques, de publicité ou de suivi des plantages, et ne communique avec aucun serveur, y compris ceux de Netersoft.</p>
+
+<h2>Données enregistrées sur ton appareil</h2>
+<ul>
+  <li><strong>Ta progression</strong> : où tu en es dans chaque notion, tes réponses (y compris ta première tentative au problème de départ et les réponses que l'application n'a pas su analyser), les pistes et solutions que tu as consultées, et l'état de chaque notion.</li>
+  <li><strong>Tes explications</strong> : les textes que tu rédiges pour expliquer une notion avec tes mots. Ils ne servent qu'à te les montrer et ne sont lus par personne d'autre.</li>
+  <li><strong>Tes préférences</strong> (thème, taille du texte, langue, premier lancement) sont enregistrées en clair : elles ne contiennent aucune donnée d'apprentissage.</li>
+</ul>
+<p>Ta progression et tes explications sont chiffrées avec AES-256, sous une clé conservée dans le stockage sécurisé du système (Android Keystore, trousseau iOS). Sur Android, elles sont exclues des sauvegardes et des transferts vers un nouvel appareil : elles n'existent que sur ton appareil. Dans la version web, elles restent dans le stockage de ton navigateur.</p>
+<p>« Tout effacer », dans les réglages, supprime définitivement ces données, comme la désinstallation de l'application ou, sur le web, l'effacement des données du site.</p>
+
+<h2>Recommander l'application</h2>
+<p>« Recommander l'application » ouvre le partage, les SMS ou l'e-mail de ton appareil avec un message que tu peux modifier. Tu choisis à qui l'envoyer ; Siamath ne transmet rien d'autre.</p>
+
+<h2>Enfants</h2>
+<p>Siamath s'adresse aussi aux élèves mineurs. Comme l'application ne collecte aucune donnée, elle ne collecte pas non plus de données d'enfants, et elle ne contient ni publicité ni achat.</p>
+
+<h2>Modifications</h2>
+<p>Si cette politique change, la nouvelle version sera incluse dans la mise à jour de l'application, avec sa date d'entrée en vigueur.</p>
+
+<h2>Contact</h2>
+<p>Pour toute question sur cette politique ou sur l'application, écris à <a href="mailto:support.netersoft@gmail.com">support.netersoft@gmail.com</a>.</p>
+</main>
+</body>
+</html>
